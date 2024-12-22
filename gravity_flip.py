@@ -1,3 +1,9 @@
+"""
+grav_flip.py
+
+This module contains the GravityFlip class and related features for toggling and managing gravity effects.
+"""
+
 class GravityFlip:
     """
     A class to manage gravity flipping functionality.
@@ -31,8 +37,12 @@ class GravityFlip:
 
         Returns:
             dict: The updated position after applying gravity.
+
+        Raises:
+            ValueError: If the position dictionary does not contain a "y" key.
         """
         if "y" not in position:
             raise ValueError("Position dictionary must contain a 'y' key.")
         position["y"] += 1 if self.gravity_state == "down" else -1
         return position
+
