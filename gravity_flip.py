@@ -9,7 +9,7 @@ class GravityFlip:
     A class to manage gravity flipping functionality.
 
     Attributes:
-        gravity_state (str): The current state of gravity ("up" or "down").
+        gravity_state (str): The current state of gravity ("up" or "down")
     """
 
     def __init__(self):
